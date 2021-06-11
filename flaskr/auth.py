@@ -31,7 +31,7 @@ def register():
                     (username, generate_password_hash(password))
             )
             database.commit()
-            return render_template(url_for('auth.login'))
+            return redirect(url_for('auth.login'))
 
         flash(error)
 
