@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
+<title>{% block title %} Create Blog {% endblock %}</title>
 
 {% block header %}
-  <h1>{% block title %}New Blog{% endblock %}</h1>
+  <a href= "{{ url_for('blog.index') }}">Index</a>
 {% endblock %}
 
 {% block content %}
